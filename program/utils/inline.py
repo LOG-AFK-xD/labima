@@ -13,6 +13,9 @@ def stream_markup(user_id):
       InlineKeyboardButton(text="• Mᴇɴᴜ", callback_data=f'stream_menu_panel | {user_id}'),
       InlineKeyboardButton(text="• Cʟᴏsᴇ", callback_data=f'set_close'),
     ],
+    [
+      InlineKeyboardButton(text="🔙 Go Back", url=f"t.me/UNIQUE_SOCIETY"'),
+    ],
   ]
   return buttons
 
