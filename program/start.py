@@ -85,7 +85,7 @@ async def start_(c: Client, message: Message):
     await add_served_user(user_id)   
     await message.reply_photo(
         photo=f"https://telegra.ph/file/f3a0b5b6c64940a1fbb22.jpg",
-        caption=f"""Hello, My name is {0}.\n\nI'm a telegram streaming bot with some useful features. Supporting platforms like Youtube, Spotify, Resso, AppleMusic , Soundcloud etc.\n\nFeel free to add me to your groups.
+        caption=f"""Hello, My name is Kiara Robot.\n\nI'm a telegram streaming bot with some useful features. Supporting platforms like Youtube, Spotify, Resso, AppleMusic , Soundcloud etc.\n\nFeel free to add me to your groups.
 """,
         reply_markup=InlineKeyboardMarkup(
             [
