@@ -91,16 +91,16 @@ async def start_(c: Client, message: Message):
                 [
                     InlineKeyboardButton(
                         "🔎 How to Use? Commands Menu.",
-                        callback_data="cbcmds",
+                        callback_data="command_list",
                     )
                 ], 
                 [            
-                    InlineKeyboardButton("📨 Support", url=f"https://t.me/BLAZE_SUPPORT"),
-                    InlineKeyboardButton("📨 Channel", url=f"https://t.me/THE_BLAZE_NETWORK"),               
+                    InlineKeyboardButton("📨 Support", url=f"https://t.me/THEMAFIASUPPORT"),
+                    InlineKeyboardButton("📨 Channel", url=f"https://t.me/THEMAFIANETWORK"),               
                 ],
                 [
                     InlineKeyboardButton(
-                        "✚ Add me to your Group", url=f"https://t.me/LOG_AFK_OFFICIAL_BOT?startgroup=true"),
+                        "✚ Add me to your Group", url=f"https://t.me/KIARA_RO_BOT?startgroup=true"),
                 ],
                 [
                     InlineKeyboardButton(
