@@ -39,33 +39,40 @@ from config import (
 async def start_set(_, query: CallbackQuery):
     await query.answer("home start")
     await query.edit_message_text(
-        f"""Hi [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) 👋🏻\n
-💭 [{me_bot.first_name}](https://t.me/{me_bot.username}) is a bot to play music and video in groups, through the new Telegram video chats.
-
-🕵🏻 Check out all the **Bot's commands** and how they work by clicking on the » 📚 **Commands** button!
-
-🧑🏻‍💻 To know how to use this bot, please click on the » ❓ **Basic Guide** button!
+        f"""Hello, My name is {0}.\n\nI'm a telegram streaming bot with some useful features. Supporting platforms like Youtube, Spotify, Resso, AppleMusic , Soundcloud etc.\n\nFeel free to add me to your groups.
 """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("➕ Add me to a Group ➕", url=f"https://t.me/{me_bot.username}?startgroup=true")
-                ],[
-                    InlineKeyboardButton("❓ Basic Guide", callback_data="user_guide")
-                ],[
-                    InlineKeyboardButton("📚 Commands", callback_data="command_list"),
-                    InlineKeyboardButton("❤️ Donate", url=f"https://t.me/{OWNER_USERNAME}")
-                ],[
-                    InlineKeyboardButton("👥 Support Group", url=f"https://t.me/{GROUP_SUPPORT}"),
-                    InlineKeyboardButton("📣 Support Channel", url=f"https://t.me/{UPDATES_CHANNEL}")
-                ],[
-                    InlineKeyboardButton("🌐 Source Code", url="https://github.com/levina-lab/video-stream")
+                    InlineKeyboardButton(
+                        "🔎 How to Use? Commands Menu.",
+                        callback_data="command_list",
+                    )
+                ], 
+                [            
+                    InlineKeyboardButton("📨 Support", url=f"https://t.me/THEMAFIASUPPORT"),
+                    InlineKeyboardButton("📨 Channel", url=f"https://t.me/THEMAFIANETWORK"),               
+                ],
+                [
+                    InlineKeyboardButton(
+                        "✚ Add me to your Group", url=f"https://t.me/KIARA_RO_BOT?startgroup=true"),
+                ],
+                [
+                    InlineKeyboardButton(
+                        "👤 Bot Owner", url=f"https://t.me/OFFICIAL_AFK_xD"
+                    ),
+                    InlineKeyboardButton(
+                        "💡 About me", url=f"https://t.me/iTzz_Official"                  
+                    ),
+                ],
+                [
+                    InlineKeyboardButton(
+                        "✳️ ChatZone ", url=f"https://t.me/UNIQUE_SOCIETY")
+
                 ],
             ]
         ),
-        disable_web_page_preview=True,
     )
-
 
 @Client.on_callback_query(filters.regex("quick_use"))
 @check_blacklist()
