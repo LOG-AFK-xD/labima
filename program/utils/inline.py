@@ -15,7 +15,7 @@ def stream_markup(user_id):
     ],
     [
       InlineKeyboardButton(text="🔙 Go Back", url=f"t.me/UNIQUE_SOCIETY"'),
-    ],
+    ]
   ]
   return buttons
 
