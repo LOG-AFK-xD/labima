@@ -38,8 +38,9 @@ from config import (
 @check_blacklist()
 async def start_set(_, query: CallbackQuery):
     await query.answer("home start")
-    await query.edit_message_text(
-        f"""Hello, My name is {0}.\n\nI'm a telegram streaming bot with some useful features. Supporting platforms like Youtube, Spotify, Resso, AppleMusic , Soundcloud etc.\n\nFeel free to add me to your groups.
+    await message.reply_photo(
+        photo=f"https://telegra.ph/file/f3a0b5b6c64940a1fbb22.jpg",
+        caption=f"""Hello, My name is Kiara Robot.\n\nI'm a telegram streaming bot with some useful features. Supporting platforms like Youtube, Spotify, Resso, AppleMusic , Soundcloud etc.\n\nFeel free to add me to your groups.
 """,
         reply_markup=InlineKeyboardMarkup(
             [
