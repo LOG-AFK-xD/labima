@@ -7,7 +7,7 @@ from pyrogram.types import (
 )
 
 
-def menu_markup(user_id):
+def stream_markup(user_id):
   buttons = [
     [
       InlineKeyboardButton(text="⏹", callback_data=f'set_stop | {user_id}'),
