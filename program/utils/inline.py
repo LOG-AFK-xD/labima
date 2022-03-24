@@ -16,11 +16,11 @@ def stream_markup(user_id):
       InlineKeyboardButton(text="⏭", callback_data=f'set_skip | {user_id}'),
     ],
     [
-      InlineKeyboardButton(text="🔇", callback_data=f'set_mute | {user_id}'),
-      InlineKeyboardButton(text="🔊", callback_data=f'set_unmute | {user_id}'),
+      InlineKeyboardButton(text="🔇", url=f"https://t.me/OmFoXD"),
+      InlineKeyboardButton(text="🔊", url=f"https://t.me/OmFoXD"),
     ],
     [
-      InlineKeyboardButton(text="🔙 Go Back", callback_data='stream_home_panel'),
+      InlineKeyboardButton(text="🔇 Close Menu", callback_data=f'set_close'),
     ],
   ]
   return buttons
